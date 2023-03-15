@@ -111,6 +111,10 @@ color: var(--text-color);
 /*hero*/
 .hero {
     background-color: var(--hero-background);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herobg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cove;
 padding: 188px 0;
 }
 .hero-header {
@@ -123,7 +127,7 @@ text-align: center;
 color: var(--white);
 margin: 0 auto 48px;
 }
-.hero-container {
+.hero-continer {
     background-color: var(--hero-background);
 }
 .order-button {
@@ -154,6 +158,31 @@ cursor: pointer;
 .advantages-item {
     flex-basis: calc((100% - 72px) / 4);
 }
+.advantages-item::before {
+    content: '';
+    display: inline-block;
+    width: 264px;
+    height: 112px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--light-background);
+}
+.icon-antenna::before {
+    background-image: url(../images/sprite.svg#icon-antenna);
+    background-size: 64px 64px;
+}
+.icon-clock::before {
+background-image: url(../images/sprite.svg#icon-clock);
+    background-size: 64px 64px;
+}
+.icon-diagram::before {
+background-image: url(../images/sprite.svg);
+    background-size: 64px 64px;
+}
+.icon-astronaut::before {
+background-image: url(../images/sprite.svg#icon-astronaut);
+    background-size: 64px 64px;
+}
 .advantages-title {
     margin-bottom: 8px;
     font-weight: 500;
@@ -167,7 +196,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 /*products*/
-.products-title, .team-title {
+.products-title, .team-title, .clients-title {
     margin-bottom: 72px;
 font-weight: 700;
 font-size: 36px;
@@ -200,6 +229,45 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--navy-blue);
+}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+.team-soc-link {
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
+.team-soc-link {
+    border-radius: 50%;
+    background-color: var(--brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-soc-icon {
+width: 16px;
+height: 16px;
+}
+/*clients*/
+.clients-item {
+    padding: 16px 32px;
+    border: 1px solid #8E8F99;
+border-radius: 4px;
+}
+.clients-item:hover,:focus {
+    border: 1px solid #404BBF;
+}
+.clients-icon {
+    width: 104px;
+    height: 56px;
+    
+}
+.clients-icon:hover {
+
 }
 /*footer*/
 .footer {
