@@ -378,11 +378,11 @@ color: var(--slate);
 }
 .container-portfolio {
     margin-top: 72px;
-    padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
 }
 .portfolio-section {
     padding-top: 96px;
+    padding-bottom: 120px;
 }
